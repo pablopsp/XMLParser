@@ -1,0 +1,6 @@
+C:\Users\Dell\source\repos\XMLParser\XMLParser\obj\Debug\XMLParser.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\XMLParser\XMLParser\obj\Debug\XMLParser.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\XMLParser\XMLParser\bin\Debug\XMLParser.dll
+C:\Users\Dell\source\repos\XMLParser\XMLParser\bin\Debug\XMLParser.pdb
+C:\Users\Dell\source\repos\XMLParser\XMLParser\obj\Debug\XMLParser.dll
+C:\Users\Dell\source\repos\XMLParser\XMLParser\obj\Debug\XMLParser.pdb
