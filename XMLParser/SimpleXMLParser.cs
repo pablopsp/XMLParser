@@ -104,7 +104,24 @@ namespace XMLParser
             return _finalList;
         }
 
+        /// <summary>
+        /// Get the data of a node just by tag and path
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="tag"></param>
+        /// <returns></returns>
+        public static object GetDataFromSimpleNode(string path, string tag)
+        {
+            try
+            {
+                _xmlDoc = new XmlDocument();
+                _xmlDoc.Load(path);
+                _nodeList = _xmlDoc.GetElementsByTagName(tag);
 
+                return _nodeList[0].InnerText;
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); return null; }
+        }
 
         /// <summary>
         /// Transform an Expando Object to the type of object that has been passed.

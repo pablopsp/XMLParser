@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace XMLCreate
@@ -31,6 +27,23 @@ namespace XMLCreate
                 xRoot.Add(apoyo);
             }
             new XDocument(xRoot).Save(path);
+        }
+
+        /// <summary>
+        /// Create a plane xml on selected path
+        /// </summary>
+        /// <param name="nodesAndValues"></param>
+        /// <param name="filePathWithName"></param>
+        public static void FlatXML(IDictionary<string, string> nodesAndValues, string filePathWithName)
+        {
+            XDocument doc = new XDocument();
+            doc.Add(new XElement("root"));
+  
+            foreach (KeyValuePair<string, string> pair in nodesAndValues)
+            {
+                doc.Root.Add(new XElement(pair.Key, pair.Value));
+            }
+            doc.Save(filePathWithName);
         }
     }
 }
